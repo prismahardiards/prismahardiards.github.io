@@ -1,0 +1,63 @@
+<h2 id="statement">4</h2>
+Fill in Blanks <br>
+<DIV class="fl" style="width: 610px; height: 730px">
+<h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+"""Calculate the sample of variance with list of data."""
+
+data = [9.2, 1.4, 5.3, 4.1, 12.5, 7.9, 8.7, 11.1]
+
+# 1. Determine length of data
+n = len(<input size=2 ans="bf84c0aa07acf475f6a92b2943ca3f45ad59f38ba8bdcb839f4fc30bdde2f3f6" placeholder=1></input> )
+
+# 2. Determine the sum of data
+total = sum(<input size=2 ans="e29142fda136eb086a960c13e97fe4a3d6ea8c46e45243ccac4813b4e54927ee" placeholder=2></input> )
+
+# 3. Determine mean
+mean = total<input size=2 ans="3dc2de0b8e0e9da95563f49e7f5201247eef20e3ea92761f6244dd1847afaf75" placeholder=3></input><input size=2 ans="c6e871d6e60b9b20308761bb7fada89fa2dbe08dc8768cc585190c652f19bf36" placeholder=4></input>
+
+# 4. Calculate the square of deviation
+square = [( x<input size=2 ans="aadc67a4abea26adbd3787eab32ae93c4d10968c44caa6c817adde2bc45bc1e8" placeholder=5></input><input size=2 ans="33dffeb9b5756d293f84d2213380154c219062269c58caef4d4371d815580db2" placeholder=6></input> ) **<input size=2 ans="396f804443825586c1283a27fdcadf74abb82008bcd9b260a30912a26563f27d" placeholder=7></input> for x in data]
+
+# 5. Calculate the variance
+var = sum(<input size=2 ans="b22908f0982e237437b77cbda0a6dbc8c7b782a88c539543be2d74f50a528cd6" placeholder=8></input> ) / ( n<input size=2 ans="2ee881da095c64e8b818d883fc507aabc8a34c34a0836d262d1811a74dc20453" placeholder=9></input><input size=2 ans="4103f0a4e707b1c7bebbc42809ab0ace8dd3f56d844d7903bfe9f95a2ccc6972" placeholder=10></input> )
+
+print("The variance value is", var)
+
+Output:
+The variance value is: 13.7221
+
+1. Which variable is used to determine squared distances of data points from their mean?<input size=2 ans="9815ca37ee4f23e8a38f76fc3ae71477883694d6946fd396ed1c0ab1e1b8491c" placeholder=11></input>
+2. Which variable is used to measure the spread or dispersion of the data?<input size=2 ans="8354373c6d257b1b7fd3b20e4edcc4cbfcffd436df174e859625f6b51a07795a" placeholder=12></input>
+3. Which function is used to calculates the sum of all elements in square variable?<input size=2 ans="f56ffbe814648376d53aa56c4f8e38243a70ca582446bbda0547979c11566561" placeholder=13></input>
+4. What is the data type of the data?<input size=2 ans="f6d68381084766353092b2d57a8ed069e6c393440938398892a9f01dd974f561" placeholder=14></input> (integer or float)
+5. What is the length of the data?<input size=2 ans="8f61d3cbcafb6953f3cd1d77d77e37c2c06c86e6fa86925e5f7ebd9d88c3c6bb" placeholder=15></input>
+6. What is the output of variance value?<input size=2 ans="720175846de7fde0fa7c84f7eaff93c061a7d4df7513ce9be5e732aa5ad1f7d1" placeholder=16></input> (two decimal places)
+
+
+</DIV>
+</pre>
+
+<DIV class="fl" style="width: 490px; height: 730px">
+<h4 id="code">Description</h4>
+    <pre class="prettyprint" id="scoring-res" >
+    <img src="./img/4-variance.png" alt="Variance">
+    </pre>
+</DIV>
+
+<DIV class="fr" style="width: 1100px; height: 130px">
+<h4 id="code1">References</h4>
+<pre class = "prettyprint" id = "scoring-res" <h2 id="code1"></h2>
+    <a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV>
+
+
+</pre>
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

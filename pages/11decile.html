@@ -1,0 +1,73 @@
+<h2 id="statement">11</h2>
+Fill in Blanks <br>
+<DIV class="fl" style="width: 650px; height: 950px">
+<h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+"""Calculate the k-th of Decile from list of data."""
+
+import numpy as np
+
+data = [1,3,5,7,9,2,4,6,8,10]
+
+# 1. Sorting the data
+sorted = np.sort(<input size=2 ans="4329863a65bf1360aeca63ca6c762d84993d51183a9ad15b361d79944f75dd3a" placeholder=1></input> )
+
+# 2. Determine the lenght of data
+n = len(<input size=2 ans="e7aadf752c2433585f5bb8b3bd693191fb11a2cccbe9e169eeb49678019de0eb" placeholder=2></input> )
+
+# 3. Determine the value position of decile
+k = 3
+Dk =<input size=2 ans="dc0635f67f0e34d1f07a38e37c4da3db8012a1819befedc2ceec02090fe2ef42" placeholder=3></input> * ( n<input size=2 ans="9d45f1c9a567a404a4160383bd6867e19e263300d355b07816c13c82f3d66acf" placeholder=4></input> 1 ) /<input size=2 ans="ac7bb74de6884ffce919c15fef4193749d4588026c643973946713ac46da540d" placeholder=5></input>
+
+# 4. Check the value position is integer or not integer
+if Dk.is_integer():
+    Dv = sorted[int(Dk) - 1]
+
+else:
+    xp1 = sorted[int(np.floor(Dk))]
+    xp2 = sorted[int(np.ceil(Dk))]
+    Dm = int(Dk)
+# 5. Calculate the value of quartile 3
+    Dv =<input size=2 ans="182a6a5a1d291e3a6fd5a8918533bcd26368998de46eaae25362bee52306d7e7" placeholder=6></input> + ( xp2<input size=2 ans="a9390eb5e63f4ed14f6dfef0246135b02f6265aeb15303aef234982278c182a1" placeholder=7></input> xp1)<input size=2 ans="1fdf63bbe7778beeb93eef4facbc51dca695a96474b12b609a3ff9267ebbbbce" placeholder=8></input> ( Dk -<input size=2 ans="48c1228df518622756da8470f669da37a3082be687edc42ccd50eade3f3ebeef" placeholder=9></input> )
+
+print(f"The k = {k}th Decile value is", Dv)
+
+output:
+The k = 3th Decile value is 4.3
+
+1. Which variable is used to determine the position of decile value?<input size=2 ans="610899c776dfa4de482382fd1cc13e688f150b68be0a45d95797d6440809698a" placeholder=10></input>
+2. Which variable is used to determine the decile value?<input size=2 ans="f1335fdc6875fa89d009ca12045de9e3d52435bcbcdee232fbc0a5650a6517f1" placeholder=11></input>
+3. Which function is used to returns the largest integer less than or equal to a given number?<input size=2 ans="b72bbdff789678b74de345c3eeee553ffa33f824736e901f2d3d81c3f7e79329" placeholder=12></input>
+4. Which function is used to returns the smallest integer less than or equal to a given number?<input size=2 ans="50bd51699176c2f8527e8e1fd5c04918014692be69f86648fc03bc73e271747d" placeholder=13></input>
+5. Which library is used to determine the calculation of decile?<input size=2 ans="4e078e6174c44fe70bc10b14531e34fa0f05a72656d6569a39b2481e6eac80f4" placeholder=14></input>
+6. What is the data type of the data?<input size=2 ans="c4fbfdd5f29858fb825921f4a030dc9a7245e314133d21e24c2700d398df446d" placeholder=15></input> (integer or float)
+7. What is the length of the data?<input size=2 ans="5311f4b0452860673bf51de02f328eaabab558672d9271c7dcc19e094c417e6b" placeholder=16></input>
+8. What is the output of decile value?<input size=2 ans="a1d46eb21bde0f708aa7e4caa2c62bdb5a3852b793dec1c0ad5b9c763ff1d373" placeholder=17></input>
+
+
+</DIV>
+</pre>
+
+<DIV class="fl" style="width: 450px; height: 950px">
+<h4 id="code">Description</h4>
+    <pre class="prettyprint" id="scoring-res" >
+    <img src="./img/11-decile.png" alt="Decile">
+    </pre>
+</DIV>
+
+<DIV class="fr" style="width: 1100px; height: 130px">
+<h4 id="code1">References</h4>
+<pre class = "prettyprint" id = "scoring-res" <h2 id="code1"></h2>
+    <a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV>
+
+
+</pre>
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

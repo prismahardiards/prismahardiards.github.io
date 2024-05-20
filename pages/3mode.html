@@ -1,0 +1,63 @@
+<h2 id="statement">3</h2>
+Fill in Blanks <br>
+<DIV class="fl" style="width: 650px; height: 740px">
+<h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+"""Calculate the mode(s) of a list of categorical data."""
+
+data = ["red", "red", "yellow", "black", "blue", "red", "red"] 
+
+# 1. Determine the frequency 
+frequency = {}
+for str in<input size=2 ans="3e3f89bbaa9dfa7562417a7600f1184bdbc7db77e3f8efb7c7a1a0cf5b1458c2" placeholder=1></input> :
+    if str in<input size=2 ans="16e174692bf4de70bf9c167210d1dec2c24bb8ea439836f5f2f6d6c5765a91c9" placeholder=2></input> :
+        frequency[str] += 1
+    else:
+        frequency[str] = 1
+
+# 2. Determine the maximum frequency
+maxs = max(list(frequency.values()))
+
+# 3. Identification of mode 
+mode = [key for key, value in frequency.items() if value ==<input size=2 ans="a95667b10590c22f8b8fdc6b7814236c8d10953b1eebb61f833d5ccbfae1ef93" placeholder=3></input> ]
+
+print("The mode value for the data is", mode)
+
+
+Output:
+The mode value for the data is "red"
+
+1. Which variable is used to denotes the frequency in data?<input size=2 ans="85c84d35c674d284926528b7ad930b8de962fa0b820641dc9403b056a5131cbd" placeholder=4></input>
+2. Which variable is used to determine max value in list data?<input size=2 ans="4717c0a9afbb978502426641871d93fbf3d7dfdbce3bcba01f6c0b05453cddfb" placeholder=5></input>
+3. Which variable is used to calculate mode value in data?<input size=2 ans="935c42f30cc7d9fafda9cb500567f26b1e1fbdf24f93ee75508124b6719ee4b9" placeholder=6></input>
+4. Which function is used to finds the maximum value in the list created from the values of the dictionary?<input size=2 ans="248ac88cb6d50d6f971ac0c417fd425f09ac139ecdd19f692ab8d87fce83222f" placeholder=7></input>
+4. What is the data to determine the frequency (f) is<input size=2 ans="361f0cf29ec3891e8be150df27f33d54faab3177535d5ed6472dba5b12b20d59" placeholder=8></input> (list or dictionary)
+5. What is the data type of data is<input size=2 ans="25352b83ca2707e78130fb162cbd1f153c0cbfb87596c3f7bb4df3a2e7643aa6" placeholder=9></input> (string or boolean)
+6. What is the output of mode value in data is<input size=2 ans="efb7615ed77367515f90c838362560fa9ac96a94e1e22d4afadd2cc7a46e8156" placeholder=10></input>
+
+</DIV>
+</pre>
+
+<DIV class="fl" style="width: 450px; height: 740px">
+    <h4 id="code">Description</h4>
+        <pre class="prettyprint" id="scoring-res" >
+        <img src="./img/3-mode.png" alt="Mode">
+        </pre>
+    </DIV>
+    
+    <DIV class="fr" style="width: 1100px; height: 130px">
+    <h4 id="code1">References</h4>
+    <pre class = "prettyprint" id = "scoring-res" <h2 id="code1"></h2>
+        <a href="./references/references.pdf" target="_blank">Download</a>
+    </pre>
+    </DIV>
+
+
+</pre>
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

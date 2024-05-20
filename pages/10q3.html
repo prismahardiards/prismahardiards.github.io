@@ -1,0 +1,71 @@
+<h2 id="statement">10</h2>
+Fill in Blanks <br>
+<DIV class="fl" style="width: 620px; height: 850px">
+<h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+"""Calculate the Quartile 3 from list of data."""
+
+import numpy as np
+
+data = [1,3,5,7,9,2,4,6,8,10]
+
+# 1. Sorting the data
+sorted = np.sort(<input size=2 ans="ee853539e996c5d98d0ea6e0b68d1df13356a9cf62d123d6ce3c5ca1f79ff6db" placeholder=1></input> )
+
+# 2. Determine the lenght of data
+n = len(<input size=2 ans="54534d8385d38cd14002de713fb93d8470ec7e39b27c0ae4e686ec7a9c7b4d2e" placeholder=2></input> )
+
+# 3. Determine the value position of quartile 3
+PQ3 = (<input size=2 ans="05550bc685f04599b689922632e7baf0719d003649362002c83ace6253b03d49" placeholder=3></input> / 4 )<input size=2 ans="32b297e0d6d39bf1c2665269e2950d0d3006c0cc01210a87fa89e8f1f4b7bfea" placeholder=4></input> ( n +<input size=2 ans="47c5fbf51c636da0b48309ad799e2e4d0443b9c25b055c6b762d6b6f6d95fc52" placeholder=5></input>)
+
+# 4. Check the value position is integer or not integer
+if PQ3.is_integer():
+    Q3 = sorted[int(PQ4) - 1]
+
+else:
+    xp1 = sorted[int(np.floor(PQ3))]
+    xp2 = sorted[int(np.ceil(PQ3))]
+    PQ4 = int(PQ3)
+# 5. Calculate the value of quartile 3
+    Q3 =<input size=2 ans="69530bc7664f4dee2df382292db619c3d2b010484ee0092f2900e19a537ad3d8" placeholder=6></input> + ( xp2<input size=2 ans="f5ae34ebe5aed1e795ad4726f264334c81f9e7e2ec0d26e46e1da7a9c10ca8a0" placeholder=7></input> xp1)<input size=2 ans="de660e8ab040eb00b67e18c68983be620e7f0e767e68081f32050bdb5b0c04ba" placeholder=8></input> ( PQ3 -<input size=2 ans="bc1c1e45464dd145be5da7b771dc6da40aea402287bdaab83b7edb2cf0c6d58e" placeholder=9></input> )
+
+print("The Quartile 3 value is", Q3)
+
+Output:
+The Quartile 3 value is 9.25
+
+1. Which variable is used to determine the position of quartile 3 value?<input size=2 ans="ba600e105f76c74c8cc036f9abf656e9ae2308d9661741af13775ca1fcea8a9e" placeholder=10></input>
+2. Which variable is used to determine the quartile 3 value?<input size=2 ans="5dc49e86647c0e79814c23207827684b180a7e2a68e6f5f81d676faeaeec5591" placeholder=11></input>
+3. Which function is used to returns the largest integer less than or equal to a given number?<input size=2 ans="b79a063a3d7ab7c805fa7a22ab4b49aeccbb2eaad10e7e3b8a1ca987873619e8" placeholder=12></input>
+4. Which function is used to returns the smallest integer less than or equal to a given number?<input size=2 ans="84c906deb2b0bbb0a83712eeea75e21f5f6faf3c50bd8e55a33f5af916940ab8" placeholder=13></input>
+5. Which library is used to determine the calculation of quartile 3?<input size=2 ans="a809a68f2fc50e0d1f969b9e33d3f5fd5a6a7a25d438fd2e2489beb675518b99" placeholder=14></input>
+6. What is the data type of the data?<input size=2 ans="e80936bdf5cc0805d0bd4897835091fe8018083971a811634bc1e0f4af3b3837" placeholder=15></input> (integer or float)
+7. What is the length of the data?<input size=2 ans="28476ed4a0be5f88e213af8a86ca873368445f55021296e051a054fad85902c2" placeholder=16></input>
+8. What is the output of quartile 3 value?<input size=2 ans="1281c91bbe758a889b9a27750c2cee6d9b9d226f936dd19d18d8725a246923bb" placeholder=17></input>
+
+
+</DIV>
+</pre>
+
+<DIV class="fl" style="width: 480px; height: 850px">
+<h4 id="code">Description</h4>
+    <pre class="prettyprint" id="scoring-res" >
+    <img src="./img/10-q3.png" alt="Quartile 3">
+    </pre>
+</DIV>
+
+<DIV class="fr" style="width: 1100px; height: 130px">
+<h4 id="code1">References</h4>
+<pre class = "prettyprint" id = "scoring-res" <h2 id="code1"></h2>
+    <a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV>
+
+</pre>
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

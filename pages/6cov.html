@@ -1,0 +1,73 @@
+<h2 id="statement">6</h2>
+Fill in Blanks <br>
+<DIV class="fl" style="width: 610px; height: 720px">
+<h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+"""Calculate the Coefficient of Variation (CV) for a list of numbers."""
+
+import math 
+
+data = [11, 22, 33, 44, 55, 66]
+
+# Check if the data set contains at least two elements
+if len(data) < 2:
+    print("Data set must contain at least two elements.")
+else:
+    # 1. Determine length of data
+    n = len(<input size=2 ans="3be1ce40ea53f6d23bede89773f4e78a360ccf569720a9863819ac6f59ce7fab" placeholder=1></input> )
+
+    # 2. Determine the sum of data
+    total = sum(<input size=2 ans="252f37e690191d51366042abd54f72956f82bf820b1b76aec3421ab02240492b" placeholder=2></input> )
+
+    # 3. Determine mean
+    mean = total<input size=2 ans="d194ba7c82a863f7cfe185402b6f4a8f048610a87fd90ff978ee53b4010116a0" placeholder=3></input><input size=2 ans="2616f2173c5b9cb5292a16766e8f28ed552f6193ee97964513e673c4dffc0213" placeholder=4></input>
+
+    # 4. Calculate the square of deviation
+    square = [( x<input size=2 ans="160bec246dab359da95722af2123941c117320e645e740bc1cfa83cb95ebae37" placeholder=5></input><input size=2 ans="8d0132d7a0c56534d044d8e2968851179ee589b512b15ed4932f21857f50363b" placeholder=6></input> ) **<input size=2 ans="8acc23987b8960d83c44541f9f0eb46454cea080ea94d916f56fccf033db866f" placeholder=7></input> for x in data]
+
+    # 5. Calculate the variance
+    var = sum(<input size=2 ans="eaee12e45b89777d883dcf6be60715f49bc838e9d5157e30505d7b73ab013701" placeholder=8></input> ) / ( n<input size=2 ans="ec4f921490d755d6165ad7a40d18fecae1a0840648dc6ebfaffdfbe17cea6bee" placeholder=9></input><input size=2 ans="31d8edb99534fd4800651db4d241d86e0380fa7376718b88590c2d772b41d5f4" placeholder=10></input> )
+
+    # 6. Calculate the standard deviation
+    std = math.sqrt(<input size=2 ans="7f961d282b5ce6c11979396d901a8b2259c808f9b6d41a4374d6f3179eef3421" placeholder=11></input> )
+    
+    # 7. Calculate the Coefficient of Variation (CV)
+    cv = (<input size=2 ans="1f4574e3e237e240b9caefc34d167384d9e17c83856368ec6c3917c1c2c393da" placeholder=12></input><input size=2 ans="fd8136ad56cdbfd66aaed5a42438c795fd905f5cba465aa76c93aabe2bb5d9cf" placeholder=13></input> mean ) *<input size=2 ans="c395478dec952880c7c67abe5f10e29564f469426fc3158384cd559ad411ccbb" placeholder=14></input> %
+    
+print(f"The coefficient of variation is: {cv:.2f}%")
+
+output:
+The coefficient of variation is 53.45
+
+1. Which variable is used to determine the coefficient of variation value?<input size=2 ans="ac0bc2a77fbdc65f17f87796273ad6ccaae58f3a0a5c76f0db1c11ffa2e23827" placeholder=15></input>
+2. Which function is used to calculate square root in standard deviation?<input size=2 ans="50979dc32e61b2b9d16693641686321e557e3f54144b9dc3d05d5cd453d77db1" placeholder=16></input>
+3. Which library is used to determine the calculation of coefficient of variation?<input size=2 ans="0ba8c8167482d238e5013495f83f0f55bee18c483e44f2aec7c174a98fa156eb" placeholder=17></input>
+4. What is the data type of the data?<input size=2 ans="862de71a0b0148ff09a77778d3c1ec103dbba33f04e47a6a57bfe461e5b1d9e4" placeholder=18></input> (integer or float)
+5. What is the length of the data?<input size=2 ans="fdab00ab9bee9faee45b958b8a49d8874e5ea4d00a04ee3c240908624a45fce7" placeholder=19></input>
+6. What is the output of coefficient of variation value?<input size=2 ans="da0e68f248fae34556b0f4112a0b1e0c26c249bca264d9b556f8ac09d072b6d9" placeholder=20></input> % 
+
+</DIV>
+</pre>
+
+<DIV class="fl" style="width: 490px; height: 720px">
+<h4 id="code">Description</h4>
+    <pre class="prettyprint" id="scoring-res" >
+    <img src="./img/6-cv.png" alt="Coefficient of Variation">
+    </pre>
+</DIV>
+
+<DIV class="fr" style="width: 1100px; height: 130px">
+<h4 id="code1">References</h4>
+<pre class = "prettyprint" id = "scoring-res" <h2 id="code1"></h2>
+    <a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV>
+
+</pre>
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

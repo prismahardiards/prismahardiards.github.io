@@ -1,0 +1,66 @@
+<h2 id="statement">13</h2>
+Fill in Blanks <br>
+<DIV class="fl" style="width: 600px; height: 890px">
+<h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+"""Calculate the Skewness of list numbers."""
+
+import math
+
+data = [1, 5, 10, 15, 20]
+
+# 1. Calculate mean
+total = sum(<input size=2 ans="db0525b93563078b4f957349c3998c510e01d7b00512a905756714234221f11b" placeholder=1></input> )
+n = len(<input size=2 ans="54b804fea4d2500f43428cd84eb32fc6d8fde0e62532f1012d4ce812e3d2becd" placeholder=2></input> )
+mean = total<input size=2 ans="f3c6c6b169334a14d5cee2062091f89dbabf19b87d017198e9fc19a6fcd3ded0" placeholder=3></input><input size=2 ans="e66906bcea8e9e123c0135de9f3d8e5f2005a3b7bbd70ba8d934bed20ffa47d6" placeholder=4></input>
+
+# 2. Calculate standard deviation
+square = [(x<input size=2 ans="3eb6fbb31ef44c8bcabe87dcba46aa4743534cc2fc364eebcc1f250b6a8205c1" placeholder=5></input><input size=2 ans="b8b9c76d16b54cbcbaa6a2ec3d5d38190a6bec0f3eb2ddc7c55c765d5ab73cea" placeholder=6></input> ) **<input size=2 ans="ea3a03b4971eeb62730e1de238225cc4e6145f0eb50ad28b1379f2a2ee71e16e" placeholder=7></input> for x in data]
+var = sum(<input size=2 ans="eef6fc32e099d610877d2c840bb5bcb1b6c4b46a696ea94c545462e5e43ad367" placeholder=8></input> )<input size=2 ans="4b232c66c2b2c8d091cd2568d8c50eff31213bcd8a546ed973f76eb3d0fb166f" placeholder=9></input> (n -<input size=2 ans="dcecd385d9a8aae54c55020d6c53aae1d7820982ac66d55c767fd1c341a6ddf2" placeholder=10></input>)
+std = math.sqrt(<input size=2 ans="62c76db39cb27a09c535fa08b3ff80fa11945af28e529bc8d02e1c8cf8aaa68f" placeholder=11></input> )
+
+# 3. Calculate skewness
+cube = sum(( x<input size=2 ans="1d40c474dc01b82b8310dbd15913f28cd8a75eb728ec91636223969695fb4c6f" placeholder=12></input><input size=2 ans="75443ac7cacec97272fecb1142c122738ecbd1ba648bdfe31a3025811b8386ed" placeholder=13></input> ) **<input size=2 ans="80ac2c38b68dbdd6ee7b3f40ba70ce90d39647cd24d6dd1f45687e17919eff5c" placeholder=14></input> for x in data)
+G1 = (n / ((<input size=2 ans="30a4b20108a24fa83b66cf8acc30e2bde894606790165775c78eecf5376c4154" placeholder=15></input> - 1 )<input size=2 ans="b347fd241cd16412b94ac47a66115fc75d3462efc0e81b4b25de060800cf7813" placeholder=16></input> (n -<input size=2 ans="91827d504e2ed891c6392b7f53a2ea1ccd591b8a25716e7c977cb29c954293f6" placeholder=17></input> ))) * (<input size=2 ans="95eb2d885d4b44740b236cd2ac62eaacb54b872b17c077f2557d531b3972cb22" placeholder=18></input><input size=2 ans="bde4757c37c0d9be2415d8cd84c46e11d28db0d8e485164248c4c5ed3b478582" placeholder=19></input> (std **<input size=2 ans="4901f3d1f8bb6b20b1f901fee3006cc620605bff4b48ef299d44964554bb86dc" placeholder=20></input> ))
+
+print("Mean:", mean)
+print("Standard Deviation:", std)
+print("Skewness:", skewness)
+
+Output:
+Mean: 10.2
+Standard Deviation: 7.5960516059331775
+Skewness: 0.12594338391894755
+
+1. Which variable is used to measure the spread or dispersion of the data with number of degree 3?<input size=2 ans="33a2c30e3190c1cd4335479469ebe44136bf3b93b383631c1cac13e6a3167514" placeholder=21></input>
+2. Which variable is used to calculate the skewness value?<input size=2 ans="0c75c385440c55034c0912335822d9854967fb7bfb2127c4c1b283aa1e9cb8d6" placeholder=22></input>
+3. Which library is used to determine the calculation of skewness?<input size=2 ans="c2819f05b6da3424787a8a21e1379eb1078be94eaef0b58b1b89e0797770dda2" placeholder=23></input>
+4. What is the data type of the data?<input size=2 ans="aeb5c3801a9d89afb45cc913768104cb665774c81056723b25842e3a89fc061d" placeholder=24></input> (integer or float)
+5. What is the length of the data?<input size=2 ans="6486f659239430e87fb812ea2a06b6ee9dd223d88785078ad22b44ccc9960ddd" placeholder=25></input>
+6. What is the output of skewness value?<input size=2 ans="b3913e2a5e8811d1942eabedadeadb1b7151a9d95a2b4e9fa5598231c1e0db2d" placeholder=26></input> (two decimal places)
+
+</DIV>
+</pre>
+
+<DIV class="fl" style="width: 500px; height: 890px">
+<h4 id="code">Description</h4>
+    <pre class="prettyprint" id="scoring-res" >
+    <img src="./img/13-skewness.png" alt="Skewness">
+    </pre>
+</DIV>
+
+<DIV class="fr" style="width: 1100px; height: 130px">
+<h4 id="code1">References</h4>
+<pre class = "prettyprint" id = "scoring-res" <h2 id="code1"></h2>
+    <a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV>
+
+</pre>
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

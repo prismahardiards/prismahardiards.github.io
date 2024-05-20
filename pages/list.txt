@@ -1,0 +1,103 @@
+<h2 id="list">Problems</h2>
+
+<table class="table table-striped table-bordered table-hover">
+
+<tr><th><b>No</th><th><b>Problem Name</th><th><b>Descriptions</th><th><b>Remark</th></</tr>
+
+
+<tr onclick="location.href='index.html?pages/1mean.html'">
+<td width="5%">1</td>
+<td width="10%">Mean</td>
+<td width="45%">A single number representing the data center point or typical value.</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/2median.html'">
+<td width="5%">2</td>
+<td width="10%">Median</td>
+<td width="45%">A middle number in a sorted list of numbers (either ascending or descending) used in statistical studies</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/3mode.html'">
+<td width="5%">3</td>
+<td width="10%">Mode</td>
+<td width="45%">A most common number that appears in the dataset.</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/4variance.html'">
+<td width="5%">4</td>
+<td width="10%">Variance</td>
+<td width="45%">A measure of variability in statistics that assesses the average squared difference between data values and the mean.</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/5std.html'">
+<td width="5%">5</td>
+<td width="10%">Standar Deviation</td>
+<td width="45%">A measures the dispersion of a dataset relative to its mean and is calculated as the square root of the variance.</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/6cov.html'">
+<td width="5%">6</td>
+<td width="10%">Coefficient of Variance</td>
+<td width="45%">A ratio of the standard deviation to the mean.</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/7range.html'">
+<td width="5%">7</td>
+<td width="10%">Range</td>
+<td width="45%">A difference between the lowest and highest values.</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/8q1.html'">
+<td width="5%">8</td>
+<td width="10%">Quartile 1</td>
+<td width="45%">Splits off the lowest 25% of data from the highest 75%.</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/9q2.html'">
+<td width="5%">9</td>
+<td width="10%">Quartile 2</td>
+<td width="45%">A cuts data set in half</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/10q3.html'">
+<td width="5%">10</td>
+<td width="10%">Quartile 3</td>
+<td width="45%">Splits off the highest 25% of data from the lowest 75%</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/11decile.html'">
+<td width="5%">11</td>
+<td width="10%">Decile</td>
+<td width="45%">A method to divide the distribution into 10 equal parts by using 9 data points and assigning decile ranks to each point.</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/12percentile.html'">
+<td width="5%">12</td>
+<td width="10%">Percentile</td>
+<td width="45%">A value on a scale of 100 that indicates the percent of a distribution that is equal to or below it.</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/13skewness.html'">
+<td width="5%">13</td>
+<td width="10%">Skewness</td>
+<td width="45%">A measure of the asymmetry of the probability distribution of a real-valued random variable about its mean.</td>
+<td id="p0116" width="10%"></td></tr>
+
+<tr onclick="location.href='index.html?pages/14kurtosis.html'">
+<td width="5%">14</td>
+<td width="10%">Kurtosis</td>
+<td width="45%">A measure of the "tailedness" of the probability distribution of a real-valued random variable.</td>
+<td id="p0116" width="10%"></td></tr>
+
+
+</table>
+
+<h2 id="submission">Submission</h2>
+<code>1</code>
+<div id="user"><input class="form-control" type="text" id="nameS" placeholder="Student ID"></div>
+<code>2</code>
+</br><a class="btn" onclick="expression()">Show Record</a>
+<textarea readonly onclick="this.focus();this.select()" class="form-control" id="show_result" value="b" placeholder="Your Record"></textarea>
+<code>3</code>
+</br><a class="btn btn-success" onclick="TextSave()">Save</a>
+<a id='DL_link'></a>
