@@ -3,33 +3,33 @@ Fill in Blanks <br>
 <DIV class="fl" style="width: 620px; height: 800px">
 <h4 id="code">Source Code</h4>
 <pre class="prettyprint" id="scoring-res">
-"""Calculate the Quartile 2 from list of data."""
-
-import numpy as np
-
-data = [1,3,5,7,9,2,4,6,8,10]
-
-# 1. Sorting the data
-sorted = np.sort(<input size=2 ans="84cb5e36965caba86d661e3944d7eca9f783355eec75cce3bd268588006c1074" placeholder=1></input> )
-
-# 2. Determine the lenght of data
-n = len(<input size=2 ans="6e9d747fe18a6ddce6a12e5dc58c285ca27973c4daffd5452bea806f4193ebd7" placeholder=2></input> )
-
-# 3. Determine the value position of quartile 2
-PQ2 = (<input size=2 ans="7cb676d57114874e00c536916e6dcad2a5d3cb8c9a5abc06335df359cd9a6ef9" placeholder=3></input> / 4 )<input size=2 ans="a1380d9daa3d132e585f33097a8bc8d668eb822a815d36e5b0adfd4573d36760" placeholder=4></input> ( n +<input size=2 ans="1dfacb2ea5a03e0a915999e03b5a56196f1b1664d2f768d1b7eff60ac059789d" placeholder=5></input>)
-
-# 4. Check the value position is integer or not integer
-if PQ2.is_integer():
-    Q2 = sorted[int(PQ2) - 1]
-
-else:
-    xp1 = sorted[int(np.floor(PQ2))]
-    xp2 = sorted[int(np.ceil(PQ2))]
-    PQ2 = int(PQ2)
-# 5. Calculate the value of quartile 2
-    Q2 =<input size=2 ans="b5c9cab7a6d0dcba2c56c5feb4fe49ba88359c79c2e3fdf272a2541102f3a845" placeholder=6></input> + ( xp2<input size=2 ans="820d4717b48173bb2db2e93d03a43fb0efdf4abfe291c1fd12e0fa75fcea9da0" placeholder=7></input> xp1)<input size=2 ans="bfb8438b6b8d296858350b34beb480383388e25a3b16533b48e84d5aaa236b50" placeholder=8></input> ( PQ2 -<input size=2 ans="90cadad2bd498ca77383150f9e99ac9963b2775115be90348916fceb85483d0c" placeholder=9></input> )
-
-print("The Quartile 2 value is", Q2)
+01: """Calculate the Quartile 2 from list of data."""
+02:
+03: import numpy as np
+04:
+05: data = [1,3,5,7,9,2,4,6,8,10]
+06:
+07: # 1. Sorting the data
+08: sorted = np.sort(<input size=2 ans="84cb5e36965caba86d661e3944d7eca9f783355eec75cce3bd268588006c1074" placeholder=1></input> )
+09:
+10: # 2. Determine the lenght of data
+11: n = len(<input size=2 ans="6e9d747fe18a6ddce6a12e5dc58c285ca27973c4daffd5452bea806f4193ebd7" placeholder=2></input> )
+12:
+13: # 3. Determine the value position of quartile 2
+14: PQ2 = (<input size=2 ans="7cb676d57114874e00c536916e6dcad2a5d3cb8c9a5abc06335df359cd9a6ef9" placeholder=3></input> / 4 )<input size=2 ans="a1380d9daa3d132e585f33097a8bc8d668eb822a815d36e5b0adfd4573d36760" placeholder=4></input> ( n +<input size=2 ans="1dfacb2ea5a03e0a915999e03b5a56196f1b1664d2f768d1b7eff60ac059789d" placeholder=5></input>)
+15:
+16: # 4. Check the value position is integer or not integer
+17: if PQ2.is_integer():
+18:    Q2 = sorted[int(PQ2) - 1]
+19:
+20: else:
+21:    xp1 = sorted[int(np.floor(PQ2))]
+22:    xp2 = sorted[int(np.ceil(PQ2))]
+23:    PQ2 = int(PQ2)
+24: # 5. Calculate the value of quartile 2
+25:    Q2 =<input size=2 ans="b5c9cab7a6d0dcba2c56c5feb4fe49ba88359c79c2e3fdf272a2541102f3a845" placeholder=6></input> + ( xp2<input size=2 ans="820d4717b48173bb2db2e93d03a43fb0efdf4abfe291c1fd12e0fa75fcea9da0" placeholder=7></input> xp1)<input size=2 ans="bfb8438b6b8d296858350b34beb480383388e25a3b16533b48e84d5aaa236b50" placeholder=8></input> ( PQ2 -<input size=2 ans="90cadad2bd498ca77383150f9e99ac9963b2775115be90348916fceb85483d0c" placeholder=9></input> )
+26:
+27: print("The Quartile 2 value is", Q2)
 
 Output:
 The Quartile 2 value is 6.5
