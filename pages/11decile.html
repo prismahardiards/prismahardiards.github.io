@@ -3,34 +3,34 @@ Fill in Blanks <br>
 <DIV class="fl" style="width: 650px; height: 950px">
 <h4 id="code">Source Code</h4>
 <pre class="prettyprint" id="scoring-res">
-"""Calculate the k-th of Decile from list of data."""
-
-import numpy as np
-
-data = [1,3,5,7,9,2,4,6,8,10]
-
-# 1. Sorting the data
-sorted = np.sort(<input size=2 ans="4329863a65bf1360aeca63ca6c762d84993d51183a9ad15b361d79944f75dd3a" placeholder=1></input> )
-
-# 2. Determine the lenght of data
-n = len(<input size=2 ans="e7aadf752c2433585f5bb8b3bd693191fb11a2cccbe9e169eeb49678019de0eb" placeholder=2></input> )
-
-# 3. Determine the value position of decile
-k = 3
-Dk =<input size=2 ans="dc0635f67f0e34d1f07a38e37c4da3db8012a1819befedc2ceec02090fe2ef42" placeholder=3></input> * ( n<input size=2 ans="9d45f1c9a567a404a4160383bd6867e19e263300d355b07816c13c82f3d66acf" placeholder=4></input> 1 ) /<input size=2 ans="ac7bb74de6884ffce919c15fef4193749d4588026c643973946713ac46da540d" placeholder=5></input>
-
-# 4. Check the value position is integer or not integer
-if Dk.is_integer():
-    Dv = sorted[int(Dk) - 1]
-
-else:
-    xp1 = sorted[int(np.floor(Dk))]
-    xp2 = sorted[int(np.ceil(Dk))]
-    Dm = int(Dk)
-# 5. Calculate the value of quartile 3
-    Dv =<input size=2 ans="182a6a5a1d291e3a6fd5a8918533bcd26368998de46eaae25362bee52306d7e7" placeholder=6></input> + ( xp2<input size=2 ans="a9390eb5e63f4ed14f6dfef0246135b02f6265aeb15303aef234982278c182a1" placeholder=7></input> xp1)<input size=2 ans="1fdf63bbe7778beeb93eef4facbc51dca695a96474b12b609a3ff9267ebbbbce" placeholder=8></input> ( Dk -<input size=2 ans="48c1228df518622756da8470f669da37a3082be687edc42ccd50eade3f3ebeef" placeholder=9></input> )
-
-print(f"The k = {k}th Decile value is", Dv)
+01: """Calculate the k-th of Decile from list of data."""
+02: 
+03: import numpy as np
+04:
+05: data = [1,3,5,7,9,2,4,6,8,10]
+06:
+07: # 1. Sorting the data
+08: sorted = np.sort(<input size=2 ans="4329863a65bf1360aeca63ca6c762d84993d51183a9ad15b361d79944f75dd3a" placeholder=1></input> )
+09:
+10: # 2. Determine the lenght of data
+11: n = len(<input size=2 ans="e7aadf752c2433585f5bb8b3bd693191fb11a2cccbe9e169eeb49678019de0eb" placeholder=2></input> )
+12:
+13: # 3. Determine the value position of decile
+14: k = 3
+15: Dk =<input size=2 ans="dc0635f67f0e34d1f07a38e37c4da3db8012a1819befedc2ceec02090fe2ef42" placeholder=3></input> * ( n<input size=2 ans="9d45f1c9a567a404a4160383bd6867e19e263300d355b07816c13c82f3d66acf" placeholder=4></input> 1 ) /<input size=2 ans="ac7bb74de6884ffce919c15fef4193749d4588026c643973946713ac46da540d" placeholder=5></input>
+16:
+17: # 4. Check the value position is integer or not integer
+18: if Dk.is_integer():
+19:    Dv = sorted[int(Dk) - 1]
+20:
+21: else:
+22:    xp1 = sorted[int(np.floor(Dk))]
+23:    xp2 = sorted[int(np.ceil(Dk))]
+24:    Dm = int(Dk)
+25: # 5. Calculate the value of quartile 3
+26:    Dv =<input size=2 ans="182a6a5a1d291e3a6fd5a8918533bcd26368998de46eaae25362bee52306d7e7" placeholder=6></input> + ( xp2<input size=2 ans="a9390eb5e63f4ed14f6dfef0246135b02f6265aeb15303aef234982278c182a1" placeholder=7></input> xp1)<input size=2 ans="1fdf63bbe7778beeb93eef4facbc51dca695a96474b12b609a3ff9267ebbbbce" placeholder=8></input> ( Dk -<input size=2 ans="48c1228df518622756da8470f669da37a3082be687edc42ccd50eade3f3ebeef" placeholder=9></input> )
+27:
+28: print(f"The k = {k}th Decile value is", Dv)
 
 output:
 The k = 3th Decile value is 4.3
