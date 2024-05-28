@@ -3,26 +3,25 @@ Fill in Blanks <br>
 <DIV class="fl" style="width: 650px; height: 740px">
 <h4 id="code">Source Code</h4>
 <pre class="prettyprint" id="scoring-res">
-"""Calculate the mode(s) of a list of categorical data."""
-
-data = ["red", "red", "yellow", "black", "blue", "red", "red"] 
-
-# 1. Determine the frequency 
-frequency = {}
-for str in<input size=2 ans="3e3f89bbaa9dfa7562417a7600f1184bdbc7db77e3f8efb7c7a1a0cf5b1458c2" placeholder=1></input> :
-    if str in<input size=2 ans="16e174692bf4de70bf9c167210d1dec2c24bb8ea439836f5f2f6d6c5765a91c9" placeholder=2></input> :
-        frequency[str] += 1
-    else:
-        frequency[str] = 1
-
-# 2. Determine the maximum frequency
-maxs = max(list(frequency.values()))
-
-# 3. Identification of mode 
-mode = [key for key, value in frequency.items() if value ==<input size=2 ans="a95667b10590c22f8b8fdc6b7814236c8d10953b1eebb61f833d5ccbfae1ef93" placeholder=3></input> ]
-
-print("The mode value for the data is", mode)
-
+01: """Calculate the mode(s) of a list of categorical data."""
+02:
+03: data = ["red", "red", "yellow", "black", "blue", "red", "red"] 
+04:
+05: # 1. Determine the frequency 
+06: frequency = {}
+07: for str in<input size=2 ans="3e3f89bbaa9dfa7562417a7600f1184bdbc7db77e3f8efb7c7a1a0cf5b1458c2" placeholder=1></input> :
+08:    if str in<input size=2 ans="16e174692bf4de70bf9c167210d1dec2c24bb8ea439836f5f2f6d6c5765a91c9" placeholder=2></input> :
+09:        frequency[str] += 1
+10:    else:
+11:        frequency[str] = 1
+12:
+13: # 2. Determine the maximum frequency
+14: maxs = max(list(frequency.values()))
+15:
+16: # 3. Identification of mode 
+17: mode = [key for key, value in frequency.items() if value ==<input size=2 ans="a95667b10590c22f8b8fdc6b7814236c8d10953b1eebb61f833d5ccbfae1ef93" placeholder=3></input> ]
+18:
+19: print("The mode value for the data is", mode)
 
 Output:
 The mode value for the data is "red"
