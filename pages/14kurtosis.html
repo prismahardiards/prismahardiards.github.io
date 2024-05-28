@@ -3,29 +3,29 @@ Fill in Blanks <br>
 <DIV class="fl" style="width: 600px; height: 950px">
 <h4 id="code">Source Code</h4>
 <pre class="prettyprint" id="scoring-res">
-"""Calculate the kurtosis of a list of numbers."""
-
-import math
-
-data = [1, 5, 10, 15, 20]
-
-# 1. Calculate mean
-total = sum(<input size=2 ans="938d3b7bdec8b36a3a08f171c6d85a921cffe64ffa55b49fbcd232a0b4900054" placeholder=1></input> )
-n = len(<input size=2 ans="816ba989d424af746b97a7204f936720a3900929e3fc4f20b146fbb8710c600a" placeholder=2></input> )
-mean = total<input size=2 ans="1767f67f2a9d9b18d1d290ac57e437416692e417f50ddd8c3195616ba121f5eb" placeholder=3></input><input size=2 ans="2cc7542a8b16d7b8056dab04ed5d1cace89595f096c9e93bb3838a9ea6eaf86f" placeholder=4></input>
-
-# 2. Calculate standard deviation
-square = [(x<input size=2 ans="a92bbd6226143b0f5c6e8c1f35cde7f42bfa2b458d3c5c2ea00598c1167d231f" placeholder=5></input><input size=2 ans="bd755ffde438e530b298bf19b530162e667de3d69f6cc4c54162826d2947870b" placeholder=6></input> ) **<input size=2 ans="8ea8eb612f9362da9d2b8ae0a65daa6410c9c952a4944933a8ad17aee8f86939" placeholder=7></input> for x in data]
-var = sum(<input size=2 ans="0b097322edcb5a25622933ca78ef0471176e7d7f8a36083ed1ea7f28acc8a5d4" placeholder=8></input> )<input size=2 ans="81335dc6ab0cebaf27287e5f675bc68cb72cd3ebb4e8d8ec87ffb8a689120a4d" placeholder=9></input> (n -<input size=2 ans="664ed72cb47df01e52aa917c412f3a0f93ee063c6b0347d70ea1c13c182a0f10" placeholder=10></input>)
-std = math.sqrt(<input size=2 ans="b33e9d4ea81e8f985289d6827ce5c8ff3659cb954a1fab66dc3d8d156a87c421" placeholder=11></input> )
-
-# 3. Calculate kurtosis
-quad = sum(( x<input size=2 ans="c8b6568ad4bfa8bea293552dd631de634614a4c87350ecf4a849397533e097d8" placeholder=12></input><input size=2 ans="6eb7efad9786e9191d858b5dce0d58db45c5c2ab95bfcba26fe27b00be1218a6" placeholder=13></input>) **<input size=2 ans="9d9ab7a576bc71717c19e56d7caa694f42f5d40b08037ab11f5a50b433e7888f" placeholder=14></input> for x in data)
-G2 = ((n * (<input size=2 ans="16e5c94e81c3dcff869181585a1f6e20276ffdf3286ae762e50c0d78035f0a24" placeholder=15></input> + 1)<input size=2 ans="362d7085e6265725835d8d396579e0dbf3b35babf41b42f7d7ce3d693dd7abaa" placeholder=16></input> ((n -<input size=2 ans="670bf741eed990090b3d096fbe354335c32b30d7aba1563d91cf9e89852f222f" placeholder=17></input> ) * (<input size=2 ans="bb74892cc136fe6307a6dc936086e6e4e0abdbf1ee2e57f528b1065c3022b082" placeholder=18></input> - 2 )<input size=2 ans="1a82b469bd67d87a6502f2bedd2b44ab5114831f7756d747c590a7c370cab7c5" placeholder=19></input> (n -<input size=2 ans="1b5aa7cf4b2e7e2e8306168e602253df2e59a8c42a5a17c2d95a37cb7651e0ca" placeholder=20></input> ))) * (<input size=2 ans="3d08565132b62c8cfef6b3c227b03c97237bab8fb96a26e7b1574fe8e5004d26" placeholder=21></input><input size=2 ans="e8845857b0612fc1887d38eace32ba28f7cc5d6f5d0592cedcead54b124df82e" placeholder=22></input> (std **<input size=2 ans="4019abde61d836bb467af2c283f94008776628e5d3eaa90e3c1c2282aef9bafe" placeholder=23></input> ))) - (3 * (<input size=2 ans="86eeb148f1905a260193282910da1529d3f1a390329a9044c6977fb66251afe7" placeholder=24></input><input size=2 ans="ba89cbd2312086082b39a35f2c1e9282612859a04e6f8b7c830966294b6c98b8" placeholder=25></input> 1) **<input size=2 ans="78e189f8550ec75e04887b0e4389bc566ef8e755825604fe747f2bc53995d607" placeholder=26></input> / ((<input size=2 ans="58b444e0093be769ab6e00ad8478e485d3f2a53f4e5d057fe827b2b89debe6c4" placeholder=27></input> - 2)<input size=2 ans="1a2127d7e4357a535627231f5ca9a4be8ce18adcfb8fc1bd151f382758451b71" placeholder=28></input> (n -<input size=2 ans="660f2d8b76c8ac9ed3800fbcddcdd40ea7f12a10f9fdacb966b68b543eaaaa69" placeholder=29></input>)))
-
-print("Mean:", mean)
-print("Standard Deviation:", std)
-print("Kurtosis:", kurtosis)
+01: """Calculate the kurtosis of a list of numbers."""
+02:
+03: import math
+04:
+05: data = [1, 5, 10, 15, 20]
+06:
+07: # 1. Calculate mean
+08: total = sum(<input size=2 ans="938d3b7bdec8b36a3a08f171c6d85a921cffe64ffa55b49fbcd232a0b4900054" placeholder=1></input> )
+09: n = len(<input size=2 ans="816ba989d424af746b97a7204f936720a3900929e3fc4f20b146fbb8710c600a" placeholder=2></input> )
+10: mean = total<input size=2 ans="1767f67f2a9d9b18d1d290ac57e437416692e417f50ddd8c3195616ba121f5eb" placeholder=3></input><input size=2 ans="2cc7542a8b16d7b8056dab04ed5d1cace89595f096c9e93bb3838a9ea6eaf86f" placeholder=4></input>
+11:
+12: # 2. Calculate standard deviation
+13: square = [(x<input size=2 ans="a92bbd6226143b0f5c6e8c1f35cde7f42bfa2b458d3c5c2ea00598c1167d231f" placeholder=5></input><input size=2 ans="bd755ffde438e530b298bf19b530162e667de3d69f6cc4c54162826d2947870b" placeholder=6></input> ) **<input size=2 ans="8ea8eb612f9362da9d2b8ae0a65daa6410c9c952a4944933a8ad17aee8f86939" placeholder=7></input> for x in data]
+14: var = sum(<input size=2 ans="0b097322edcb5a25622933ca78ef0471176e7d7f8a36083ed1ea7f28acc8a5d4" placeholder=8></input> )<input size=2 ans="81335dc6ab0cebaf27287e5f675bc68cb72cd3ebb4e8d8ec87ffb8a689120a4d" placeholder=9></input> (n -<input size=2 ans="664ed72cb47df01e52aa917c412f3a0f93ee063c6b0347d70ea1c13c182a0f10" placeholder=10></input>)
+15: std = math.sqrt(<input size=2 ans="b33e9d4ea81e8f985289d6827ce5c8ff3659cb954a1fab66dc3d8d156a87c421" placeholder=11></input> )
+16:
+17: # 3. Calculate kurtosis
+18: quad = sum(( x<input size=2 ans="c8b6568ad4bfa8bea293552dd631de634614a4c87350ecf4a849397533e097d8" placeholder=12></input><input size=2 ans="6eb7efad9786e9191d858b5dce0d58db45c5c2ab95bfcba26fe27b00be1218a6" placeholder=13></input>) **<input size=2 ans="9d9ab7a576bc71717c19e56d7caa694f42f5d40b08037ab11f5a50b433e7888f" placeholder=14></input> for x in data)
+19: G2 = ((n * (<input size=2 ans="16e5c94e81c3dcff869181585a1f6e20276ffdf3286ae762e50c0d78035f0a24" placeholder=15></input> + 1)<input size=2 ans="362d7085e6265725835d8d396579e0dbf3b35babf41b42f7d7ce3d693dd7abaa" placeholder=16></input> ((n -<input size=2 ans="670bf741eed990090b3d096fbe354335c32b30d7aba1563d91cf9e89852f222f" placeholder=17></input> ) * (<input size=2 ans="bb74892cc136fe6307a6dc936086e6e4e0abdbf1ee2e57f528b1065c3022b082" placeholder=18></input> - 2 )<input size=2 ans="1a82b469bd67d87a6502f2bedd2b44ab5114831f7756d747c590a7c370cab7c5" placeholder=19></input> (n -<input size=2 ans="1b5aa7cf4b2e7e2e8306168e602253df2e59a8c42a5a17c2d95a37cb7651e0ca" placeholder=20></input> ))) * (<input size=2 ans="3d08565132b62c8cfef6b3c227b03c97237bab8fb96a26e7b1574fe8e5004d26" placeholder=21></input><input size=2 ans="e8845857b0612fc1887d38eace32ba28f7cc5d6f5d0592cedcead54b124df82e" placeholder=22></input> (std **<input size=2 ans="4019abde61d836bb467af2c283f94008776628e5d3eaa90e3c1c2282aef9bafe" placeholder=23></input> ))) - (3 * (<input size=2 ans="86eeb148f1905a260193282910da1529d3f1a390329a9044c6977fb66251afe7" placeholder=24></input><input size=2 ans="ba89cbd2312086082b39a35f2c1e9282612859a04e6f8b7c830966294b6c98b8" placeholder=25></input> 1) **<input size=2 ans="78e189f8550ec75e04887b0e4389bc566ef8e755825604fe747f2bc53995d607" placeholder=26></input> / ((<input size=2 ans="58b444e0093be769ab6e00ad8478e485d3f2a53f4e5d057fe827b2b89debe6c4" placeholder=27></input> - 2)<input size=2 ans="1a2127d7e4357a535627231f5ca9a4be8ce18adcfb8fc1bd151f382758451b71" placeholder=28></input> (n -<input size=2 ans="660f2d8b76c8ac9ed3800fbcddcdd40ea7f12a10f9fdacb966b68b543eaaaa69" placeholder=29></input>)))
+20:
+21: print("Mean:", mean)
+22: print("Standard Deviation:", std)
+23: print("Kurtosis:", kurtosis)
 
 Output:
 Mean: 10.2
