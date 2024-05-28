@@ -3,34 +3,34 @@ Fill in Blanks <br>
 <DIV class="fl" style="width: 650px; height: 950px">
 <h4 id="code">Source Code</h4>
 <pre class="prettyprint" id="scoring-res">
-"""Calculate the c-th of Percentile from list of data."""
-
-import numpy as np
-
-data = [1,3,5,7,9,2,4,6,8,10]
-
-# 1. Sorting the data
-sorted = np.sort(<input size=2 ans="59b39df1fbce384390c5d7682ee6d76b73585723ece6bc4b863fd376b3a65d5c" placeholder=1></input> )
-
-# 2. Determine the lenght of data
-n = len(<input size=2 ans="71d2a00c642e5a6eeb97c89fcdef22e463a48995a600a86f1a7c977089e3752f" placeholder=2></input> )
-
-# 3. Determine the value position of Percentile
-p = 3
-Pp =<input size=2 ans="e105fc3091927de105f7b55c7a9c263e4e665935d441e03c060f4f2c6af58fc1" placeholder=3></input> * ( n<input size=2 ans="4951ec3a7db84cfe42546a0c1ddf57982f0863e6ba05a84622638460c9907ba4" placeholder=4></input> 1 ) /<input size=2 ans="b397ccc3b322ae0a5f056a6d34c7376d9ca2b123d742bd783a52a83c95de25a4" placeholder=5></input>
-
-# 4. Check the value position is integer or not integer
-if Pp.is_integer():
-    Pv = sorted[int(Pp) - 1]
-
-else:
-    xp1 = sorted[int(np.floor(Pp))]
-    xp2 = sorted[int(np.ceil(Pp))]
-    Pq = int(Pp)
-# 5. Calculate the value of Percentile
-    Pv =<input size=2 ans="d3033b88defd291795bbab973c3c298e0a6785a4d96623496a34bcb4f7588dfa" placeholder=6></input> + ( xp2<input size=2 ans="912d484b868e994bd9f4bec0eb41e36d2ad7fd601fd1e8e135076e2fbcdab039" placeholder=7></input> xp1)<input size=2 ans="34a457fea7b3a28357ca923b56c4d96431dd3ba9454d694d71a53ffce5d7f363" placeholder=8></input> ( Pp -<input size=2 ans="b7f28fadce349708e819d9d6b62318073d353f1e9aac601dd1e83aa12e14b267" placeholder=9></input> )
-
-print(f"The p = {p}th Percentile value is", Pp)
+01: """Calculate the c-th of Percentile from list of data."""
+02:
+03: import numpy as np
+04:
+05: data = [1,3,5,7,9,2,4,6,8,10]
+06:
+07: # 1. Sorting the data
+08: sorted = np.sort(<input size=2 ans="59b39df1fbce384390c5d7682ee6d76b73585723ece6bc4b863fd376b3a65d5c" placeholder=1></input> )
+09:
+10: # 2. Determine the lenght of data
+11: n = len(<input size=2 ans="71d2a00c642e5a6eeb97c89fcdef22e463a48995a600a86f1a7c977089e3752f" placeholder=2></input> )
+12:
+13: # 3. Determine the value position of Percentile
+14: p = 3
+15: Pp =<input size=2 ans="e105fc3091927de105f7b55c7a9c263e4e665935d441e03c060f4f2c6af58fc1" placeholder=3></input> * ( n<input size=2 ans="4951ec3a7db84cfe42546a0c1ddf57982f0863e6ba05a84622638460c9907ba4" placeholder=4></input> 1 ) /<input size=2 ans="b397ccc3b322ae0a5f056a6d34c7376d9ca2b123d742bd783a52a83c95de25a4" placeholder=5></input>
+16:
+17: # 4. Check the value position is integer or not integer
+18: if Pp.is_integer():
+19:    Pv = sorted[int(Pp) - 1]
+20:
+21: else:
+20:    xp1 = sorted[int(np.floor(Pp))]
+22:    xp2 = sorted[int(np.ceil(Pp))]
+23:    Pq = int(Pp)
+24: # 5. Calculate the value of Percentile
+25:    Pv =<input size=2 ans="d3033b88defd291795bbab973c3c298e0a6785a4d96623496a34bcb4f7588dfa" placeholder=6></input> + ( xp2<input size=2 ans="912d484b868e994bd9f4bec0eb41e36d2ad7fd601fd1e8e135076e2fbcdab039" placeholder=7></input> xp1)<input size=2 ans="34a457fea7b3a28357ca923b56c4d96431dd3ba9454d694d71a53ffce5d7f363" placeholder=8></input> ( Pp -<input size=2 ans="b7f28fadce349708e819d9d6b62318073d353f1e9aac601dd1e83aa12e14b267" placeholder=9></input> )
+26:
+27: print(f"The p = {p}th Percentile value is", Pp)
 
 output:
 The p = 60th Percentile value is 7.6
