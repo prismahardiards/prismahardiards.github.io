@@ -1,0 +1,56 @@
+<h2 id="statement">6</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Parameters for the t distribution problem
+02: # sample mean
+03: xbar = 14.2  
+04: # population mean (hypothesized)
+05: mu = 15  
+06: # sample standard deviation
+07: std = 1.5  
+08: # sample size
+09: n1 = 10  
+10: 
+11: # Degrees of freedom
+12: dof = <input size=2 ans="8187707958ad37990f0b2be1b48c16cdd2757dfd97f4f5eb651a927dc495d7d5" placeholder="1"></input> <input size=2 ans="ae299f4f1aed015701d2e416d23bded2549f4c1177a375d96b04f4bee68d2bcb" placeholder="2"></input> <input size=2 ans="3d3286f7cd19074f04e514b0c6c237e757513fb32820698b790e1dec801d947a" placeholder="3"></input>  
+13: 
+14: # Calculate the t distribution
+15: tS = (xbar <input size=2 ans="9f084ab41e5a6c7372de37bab3258f16bbff6ca725bd766828e73df4c3d29b0b" placeholder="4"></input> mu) / (<input size=2 ans="b7dd950a28431dc4c1b0af56c3f7608ca446f1f4581e8dec232acb81c2d649eb" placeholder="5"></input> / (<input size=2 ans="2f0570b26a801bc3f0751c32ac698dde39fae6ae9ca239247de5005637c00819" placeholder="6"></input> ** 0.5))
+16: print("t-distribution", tS)
+17: 
+18: # Manually calculate the critical t-value using a lookup approximation (simplified)
+19: # For a 95% confidence level and 9 degrees of freedom (dof is 9), we use a known critical value ~ 2.262 
+20: ctv = 2.262
+21: print("critical t-value", ctv)
+22: 
+23: # Compare the calculated t distribution with the critical t value
+24: Xt = abs(tS) > <input size=2 ans="f87a7c236e3bbb2551adeda15f2b858377e6dab325f515bef56f6e5f055c23f4" placeholder="7"></input>
+25: print("reject null hypothesis of t-value", Xt)
+26: 
+27: # Output value
+28: t-distribution: -1.6866
+29: critical t-value: 2.262
+30: reject null hypothesis of t-value: False<br>
+Q1. Which parameter is used to determine the sample mean? <input size=2 ans="cfafbd5267077f2442bcf7e28bfc0d46579a7a12de0563de7cc305cd837f54e1" placeholder="8"></input>
+Q2. Which parameter is used to determine the mean of the distribution? <input size=2 ans="8a5bb0d348b99049d4cd7a67dbb4635cbc41a13116c1617cbe96401295c43d7e" placeholder="9"></input>
+Q3. Which function is used to calculate the absolute value? <input size=2 ans="fb010820e3012ed001a496c76b31f0209edb1e8898af60751a7555979c2cd59e" placeholder="10"></input>
+Q4. Which parameter is used to determine the critical value of t-distribution? <input size=2 ans="9cbc798b7e51da095eb988e8ede3c92a569382f48af58910ed861e3545386c4f" placeholder="11"></input>
+Q5. Which parameter is used to determine the sample size for t-distribution? <input size=2 ans="91749dba0496ac74b55f5b005f094a78794f2689f023384ce592922e327a2d69" placeholder="12"></input>
+Q6. What is the value of reject null hypothesis of t-value? <input size=2 ans="False" placeholder="13"></input>
+Q7. What is the value of critical t-value? <input size=2 ans="dedc88f83fd0273af2726fe58303367ae215d1bedc290f265e81cdfa802790e3" placeholder="14"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/06t.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

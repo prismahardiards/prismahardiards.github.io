@@ -1,0 +1,50 @@
+<h2 id="statement">8</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Observed and expected frequencies
+02: obs = [15, 30, 25, 20, 10, 20]
+03: exp = [20, 20, 20, 20, 20, 20]
+04: 
+05: # Calculate the chi-square (CS) statistic
+06: CS = 0
+07: for i in range(len(obs)):
+08:     CS += (<input size=2 ans="a198f111c7d76eaa920b5e7f52752250b0d8370e042c145ec61859a14ed173cd" placeholder="1"></input>[<input size=2 ans="ff179d959fb904655facfbb2227f19aea6cf24f9a1568360d3805aedcaae9303" placeholder="2"></input>] - exp[<input size=2 ans="1e944f8d9bb459f3ffd8eb690d6d762fcf05fafa0fe1d83708df6cdc89f8207e" placeholder="3"></input>]) ** <input size=2 ans="1e68ed4e3d58a51096a7feea3947f40debf1fd9246ec977eb62ab93c81823ad9" placeholder="4"></input> / exp[<input size=2 ans="877946904fe9387e22e244c8bb4d82ef2f24e623213bff88cfe589797c802304" placeholder="5"></input>]
+09: print("chi-square statistics", CS)
+10: 
+11: # Degrees of freedom
+12: df = <input size=2 ans="645170e59799fb152a95c7b630f30814000bda16bacb9d6ad8d7d78b7b25a2bc" placeholder="6"></input>(obs) <input size=2 ans="b8a04bc64b66b9baa4133554a7156408cfee77eb2e5399394b0034472dfe1b0c" placeholder="7"></input> <input size=2 ans="d6061bbee6cf13bd73765faaea7cdd0af1323e4b125342ac346047f7c4bda1fc" placeholder="8"></input>  
+13: print("degree of freedom", df)
+14: 
+15: # Critical value for chi-square distribution with 5 degrees of freedom and 5% significance level
+16: alpha = 11.07 
+17: 
+18: # Decision reject null hypothesis if chi-square statistic is greater than critical value
+19: X = CS > <input size=2 ans="493252c31b6be0161fc0701f3ddd55db41b2e3b132d6859ff1c4b9b1dfa98460" placeholder="9"></input>
+20: print("reject null hypothesis", X)
+21: 
+22: #Output Value
+23: chi-square statistics: 12.5
+24: degree of freedom: 5
+25: reject null hypothesis of chi-square value: True<br>
+Q1. Which keyword is used to determine data observed? <input size=2 ans="67f0523ff1aa1f3886807c4af8da87193301632c60ef8238e40eb8aa5cb111f1" placeholder="10"></input>
+Q2. Which keyword is used to determine data expected? <input size=2 ans="ec55fb03969451c306e0b25c500b2f213d874bf387be267bf4c38f450f77969a" placeholder="11"></input>
+Q3. Which parameter is used to determine the 5 degrees of freedom? <input size=2 ans="acdb9d5578b82ee3cd290b82121faccfde8b736b0fe54119ad578de1d8b089a8" placeholder="12"></input>
+Q4. Which variable is used to calculate chi-square distribution? <input size=2 ans="83308dd508ccd01353d18a1bfd4903f7bf9bfa0bdd375d51e0c1b1a50f5addb3" placeholder="13"></input>
+Q5. What is the value of reject null hypothesis? <input size=2 ans="True" placeholder="14"></input>
+Q6. What is the value of degree of freedom? <input size=2 ans="06d6cd09cf62841e901ad2c559b3b32b43f2f068bdb3c70bfda3e247c71f9e8a" placeholder="15"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/08chi-square.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>
